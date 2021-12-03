@@ -1,0 +1,317 @@
+*{
+  margin: 0;
+}
+
+.cond{
+    height: 500px;
+    width: 250px;
+    background-color: rgb(37, 37, 37);
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    align-content: center;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+
+}
+.disp1{
+    background-image:url(samsung_note_4-wallpaper-2880x1620.jpg) ;
+    background-size: 475px 240px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    height: 475px;
+    width: 240px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    border-radius: 3px;
+}
+
+#ty{
+    top: 0px;
+    visibility:visible;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+#ui{
+    border-radius: 1px;
+    top: 30px;
+    left: 20px;
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    background-color: rgb(31, 32, 32);
+}
+#po{
+    
+    width: 10px;
+    left: 25px;
+    top: 15px;
+    position: absolute;
+    height: 2px;
+    background-color: rgb(28, 139, 230);
+}
+#btn{
+    left: 110px;
+    top: 430px;
+    position: absolute;
+}
+#btn > button{
+    position: absolute;
+    padding: 15px;
+    background-color: cornsilk;
+    opacity: 40%;
+    border-radius: 5px;
+    border: none;
+    background-image: url(clipart414629.png);
+    background-size: 30px 27px;
+}
+#men:hover{
+    cursor: pointer;
+}
+#men{
+  position: absolute;
+}
+
+#hh{
+  position: absolute;
+  top: 3px;
+    grid-template-columns: auto auto auto ;
+    display: grid;
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(21, 22, 22);
+}
+#hh > button{
+    margin-top: 30px;
+    margin-left: 25px;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(5, 58, 42);
+    border-radius: 3px;
+}
+#home,#home2{
+    display: grid;
+   grid-template-columns: 50px 150px 45px;
+    top: 455px;
+    height: 0;
+    width: 100%;
+    background-color: rgb(243, 235, 235);
+    position: absolute;
+}
+#home>a{
+    color: white;
+  
+}
+#nav,#nav2{
+    
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    position: absolute;
+    border-radius: 3px;
+    transition: .5s;
+}
+#navc{
+  top: 0px;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+}
+#homec{
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 470px;
+}
+.b{
+  margin-top: 20px;
+}
+.app{
+  display: flex;
+  flex-direction:column-reverse;
+}
+
+.app>button{
+
+  margin: 20px;
+  padding: 20px;
+  border: none;
+  border-radius: 3px;
+}
+.slider {
+  top: 200px;
+  height: 350px;
+  width: auto;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  
+}
+.app {
+  flex-shrink: 0;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+#bb{
+  display: none;
+  left: 70%;
+  top: 10%;
+  height: 475px;
+  width: 240px;
+  background-color: rgb(202, 193, 193);
+  position: absolute;
+  border-radius: 3px; 
+}
+
+#container{
+    width: auto;
+    height: 100%;
+    background-color: rgb(75, 82, 82);
+    margin-bottom: 50px;
+    opacity: 80%;
+    border-radius: 5px;
+}
+
+#btncont{
+  transform: translateY(60px);
+  height: 250px;
+  display: grid;
+  padding: 5px;
+  grid-template-columns: auto auto 70px auto;
+  grid-gap: 5px;
+  vertical-align: bottom;
+}
+#display{
+  background-color: rgb(216, 203, 203);
+  height: 70px;
+  transform: translateY(50px);
+  margin: 10px;
+  
+}
+
+#btn{
+  background-color: rgb(149, 149, 158);
+  text-align: center;
+  color: aliceblue;
+  font-family: sans-serif;
+  font-size: 25px;
+  border: 1px
+solid black;
+  border-radius: 10%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  position: inherit;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#btn:hover{
+  border:1px solid white;
+  
+}
+
+#input:focus{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border: 1px solid rgb(223, 212, 212);
+  border-radius: 1px;
+  box-sizing: border-box;
+  outline: none;
+  direction: rtl;
+  font-size: 24px;
+}
+
+#input{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border: 1px solid rgb(240, 230, 230);
+  border-radius: 1px;
+  box-sizing: border-box;
+  outline: none;
+  direction: rtl;
+  font-size: 24px;
+}
+#theam{
+  width: 340px;
+  height: 300px;
+  background-color: rgb(212, 213, 214);
+  position:absolute;
+  transform: translateY(-300px);
+  margin: 0px;
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-gap: 5px;
+  border-radius: 5px;
+  display:none;
+}
+
+#theam > div{
+  height: auto;
+  width:auto;
+  background-color: #ccc;
+  margin: 6px;
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width: 450px) {
+  body {
+    background-color: rgb(143, 121, 224);
+  }
+  #container{
+      margin: 0;
+      width: auto;
+      height: 500px;
+      background-color: rgb(75, 82, 82);
+      opacity: 70%;
+      transform: translateY(20px);
+      border-radius: 5px;
+  }
+  #btncont{
+  transform: translateY(70px);
+  height: 250px;
+  display: grid;
+  padding: 5px;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  vertical-align: bottom;
+}
+#display{
+  background-color: rgb(255, 255, 255);
+  height: 100px;
+  transform: translateY(50px);
+  margin: 5px;
+  opacity: 80%;
+  
+}
+#btn{
+  height: 65px;
+  width: 80px;
+  background-color: rgb(149, 149, 158);
+  text-align: center;
+  color: aliceblue;
+  font-family: sans-serif;
+  font-size: 25px;
+  border: 1px solid black;
+}
+#btn:hover{
+  border:1px solid rgb(107, 115, 221);
+  border-radius: 10%;
+}
+#btn14{
+  grid-area: 4/4/4/2;
+}
+
+}

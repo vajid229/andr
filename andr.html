@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js" integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="andr.css">
+</head>
+<body>
+    <button class="b" id="up" >v up</button>
+    <button class="b" id="down">v down</button>
+    <button  id="pow">power</button>
+    <div>
+
+     
+        <div id="condainer" class="cond">SAMSUNG
+            <div id="disp"  class="disp1">
+                <div id="nav2"></div>
+                <div id="home2">
+                 <a href="#"><img width="15px" src="left-chevron (1).png" alt=""></a>
+          
+                 <a href="#" ><img   width="15px" src="dry-clean.png" alt=""></a>
+          
+                 <a href="#"><img width="15px" src="rounded-rectangle.png" alt=""></a>
+             </div>
+                <div id="navc"></div>
+                <div id="homec"></div>
+            <div id="wr" class="slider">
+                <div class="app" id="happ1">
+                    <button id="b1"></button>
+                   <button id="b2"></button>
+                   <button id="b3"></button>
+                   <button id="b4"></button>
+                   <button id="b5"></button>
+                   <button id="b6"></button>
+                </div>
+                <div class="app" id="happ2">
+                    <button id="b1"></button>
+                   <button id="b2"></button>
+                   <button id="b3"></button>
+                   <button id="b4"></button>
+                   <button id="b5"></button>
+                   <button id="b6"></button>
+                </div>
+            </div>
+                
+                
+             <div id="hh">
+                <div id="nav"></div>
+                <div id="home">
+                 <a href="#"><img width="15px" src="left-chevron (1).png" alt=""></a>
+          
+                 <a href="#" id="fback"><img   width="15px" src="dry-clean.png" alt=""></a>
+          
+                 <a href="#"><img width="15px" src="rounded-rectangle.png" alt=""></a>
+             </div>
+                   <button id="b1"></button>
+                   <button id="b2"></button>
+                   <button id="b3"></button>
+                   <button id="b4"></button>
+                   <button id="b5"></button>
+                   <button id="b6"></button>
+                   <button id="b7"></button>
+                   <button id="b3"></button>
+                   <button id="b4"></button>
+                   <button id="b5"></button>
+                   <button id="b6"></button>
+                   <button id="b7"></button>
+                </div>
+                <div id="btn">
+                    <button id="men"></button>
+                </div>
+                <div id="ty"></div>
+              <div  id="ui">
+                <div id="po"></div>
+              </div>
+
+                <video id="vd" style=" left: 50%;transform: translate(-50%, -50%);top: 50%;position: absolute;" width="240px" src="Samsung Logo animation.mp4"></video>
+                <div id="bb">
+                    <div class="container1" id="container2">
+                <div id="display"><input id="input" type="tel text"></div>
+                <div id="btncont">
+                    <input onclick="dis('7')" id="btn" value="7" type="button">
+                    <input onclick="dis('8')" id="btn" value="8" type="button">
+                    <input onclick="dis('9')" id="btn" value="9" type="button">
+                    <input onclick="dis('+')" id="btn" value="+" type="button">
+                    <input onclick="dis('4')" id="btn" value="4" type="button">
+                    <input onclick="dis('5')" id="btn" value="5" type="button">
+                    <input onclick="dis('6')" id="btn" value="6" type="button">
+                    <input onclick="dis('-')" id="btn" value="-" type="button">
+                    <input onclick="dis('1')" id="btn" value="1" type="button">
+                    <input onclick="dis('2')" id="btn" value="2" type="button">
+                    <input onclick="dis('3')" id="btn" value="3" type="button">
+                    <input onclick="dis('*')" id="btn" value="×" type="button">
+                    <input onclick="solve()" id="btn" value="=" type="button">
+                    <input onclick="dis('0')" id="btn" value="0" type="button">
+                    <input style="font-size: 19px;" onclick="q14()" id="btn" value="Theam" type="button">
+                    <input style="font-size: 16px;" onclick="clr()" id="btn" value="clr" type="button">
+                </div>
+                <div id="theam">
+                    <div onclick="mm()" style="background-color: rgb(143, 121, 224);" id="a"></div>
+                    <div onclick="nn()" style="background-color: rgb(93, 133, 219);" id="b"></div>
+                    <div onclick="vv()" style="background-color: rgb(72, 201, 104);" id="c"></div>
+                    <div onclick="cc()" style="background-color: rgb(255, 0, 234);" id="d"></div>
+                    <div onclick="xx()" style="background-color: rgb(199, 187, 81);" id="e"></div>
+                    <div onclick="zz()" style="background-color: rgb(0, 255, 221);" id="f"></div>
+                </div>
+               </div>
+         </div>
+        </div>
+    </div>
+    
+    <script>
+        
+        $(document).ready(function(){
+            $("#home").hide();
+            $("#navc").click(function(){$("#nav").css({"padding-bottom": "200px"})});
+            $("#navc").click(function(){$("#nav2").css({"padding-bottom": "200px"})});
+            $("#homec").click(function(){$("#home").show();})
+            $("#homec").click(function(){$("#home2").show();})
+            $("a").click(function(){
+                $("#hh").css({"visibility": "hidden"});
+            })
+            $("#pow").click(function(){
+                $("#vd").get(0).play();$("#vd").get(0).playbackRate = 3;
+                $("#ty").css({"visibility":"hidden","transition": "1s"});
+                $("#vd").css({"visibility":"hidden","transition": "1s"});
+            });
+   
+    $("#ui").hide(3);
+
+    $("#men").click(function (){
+        $("#hh").css({"visibility": "visible"});
+        $("#nav").css({"padding-bottom": "0px"})
+        $("#nav2").css({"padding-bottom": "0px"})
+        $("#men").css({"visibility": "hidden"});
+    });
+
+    $("#fback").click(function(){
+        $("#men").css({"visibility": "visible"});
+        $("#nav2").css({"padding-bottom": "0px"})
+    });
+
+
+
+    $("#men").click(function(){
+        $("#bb").css({"visibility": "visible"});
+    })
+
+     //volume function
+     $("#down").click(function(){
+    $("#po").css({
+      "padding-right": "-=5px"
+    });$("#ui").show();
+        });
+    $("#up").click(function(){
+    $("#po").css({
+      "padding-right": "+=5px"
+        });
+    $("#ui").show();
+        });
+
+
+
+ });
+
+    </script>
+   
+</body>
+</html>
